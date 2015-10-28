@@ -3,7 +3,7 @@ require_relative 'sharedcontext'
 require_relative 'shared_expectations'
 require 'vagrant-r10k/action/base'
 require 'vagrant-r10k/action/deploy'
-require 'r10k/task/puppetfile'
+require 'r10k/action/puppetfile'
 require 'r10k/git/errors'
 
 include SharedExpectations

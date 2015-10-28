@@ -42,7 +42,7 @@ module VagrantPlugins
         def deploy(env, config)
           @logger.debug("vagrant::r10k::deploy.deploy called")
           require 'r10k/task_runner'
-          require 'r10k/task/puppetfile'
+          require 'r10k/action/puppetfile'
 
           env[:ui].info "vagrant-r10k: Beginning r10k deploy of puppet modules into #{config[:module_path]} using #{config[:puppetfile_path]}"
 
